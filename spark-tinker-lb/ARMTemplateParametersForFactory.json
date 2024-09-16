@@ -11,6 +11,12 @@
 		"SqlSink_password": {
 			"value": ""
 		},
+		"Inputblob_connectionString": {
+			"value": ""
+		},
+		"OutputDB_password": {
+			"value": ""
+		},
 		"SqlSink_properties_typeProperties_server": {
 			"value": "tinker-db.database.windows.net"
 		},
@@ -18,6 +24,15 @@
 			"value": "spark-tinker-db"
 		},
 		"SqlSink_properties_typeProperties_userName": {
+			"value": "admin_dd"
+		},
+		"OutputDB_properties_typeProperties_server": {
+			"value": "tinker-db.database.windows.net"
+		},
+		"OutputDB_properties_typeProperties_database": {
+			"value": "spark-tinker-db"
+		},
+		"OutputDB_properties_typeProperties_userName": {
 			"value": "admin_dd"
 		}
 	}

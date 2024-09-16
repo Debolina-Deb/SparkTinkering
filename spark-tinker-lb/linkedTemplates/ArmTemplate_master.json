@@ -15,6 +15,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'SqlSink'"
 		},
+		"Inputblob_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'Inputblob'"
+		},
+		"OutputDB_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'OutputDB'"
+		},
 		"SqlSink_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "tinker-db.database.windows.net"
@@ -24,6 +32,18 @@
 			"defaultValue": "spark-tinker-db"
 		},
 		"SqlSink_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin_dd"
+		},
+		"OutputDB_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "tinker-db.database.windows.net"
+		},
+		"OutputDB_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "spark-tinker-db"
+		},
+		"OutputDB_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "admin_dd"
 		},
@@ -60,6 +80,12 @@
 					"SqlSink_password": {
 						"value": "[parameters('SqlSink_password')]"
 					},
+					"Inputblob_connectionString": {
+						"value": "[parameters('Inputblob_connectionString')]"
+					},
+					"OutputDB_password": {
+						"value": "[parameters('OutputDB_password')]"
+					},
 					"SqlSink_properties_typeProperties_server": {
 						"value": "[parameters('SqlSink_properties_typeProperties_server')]"
 					},
@@ -68,6 +94,15 @@
 					},
 					"SqlSink_properties_typeProperties_userName": {
 						"value": "[parameters('SqlSink_properties_typeProperties_userName')]"
+					},
+					"OutputDB_properties_typeProperties_server": {
+						"value": "[parameters('OutputDB_properties_typeProperties_server')]"
+					},
+					"OutputDB_properties_typeProperties_database": {
+						"value": "[parameters('OutputDB_properties_typeProperties_database')]"
+					},
+					"OutputDB_properties_typeProperties_userName": {
+						"value": "[parameters('OutputDB_properties_typeProperties_userName')]"
 					}
 				}
 			},
